@@ -1,9 +1,9 @@
 <div class="list">
- 
-  <p><strong><%= list.body %></strong></p>
+	<ul>
+		<li><strong><%= list.body %></strong></li>
+	</ul>
 
-
-  <br>
-  <%= link_to "See Item", list if action_name == "index" %> 
-  <%= link_to "Edit Item", edit_list_path(list) %>
+	<button><%= link_to "Customise", list if action_name == "index" %></button> 
+	
 </div>
+<br>

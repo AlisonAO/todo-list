@@ -27,7 +27,7 @@ class ListsController < ApplicationController
   def update
 
     list = current_user.lists.find(params[:id])
-    current_user.lists.update(list_params)
+    list.update!(list_params)
 
     redirect_to list
   end

@@ -1,0 +1,36 @@
+
+
+
+html {
+
+}
+
+body {
+
+}
+
+.navbar-text {
+	display: inline-block;
+
+}
+
+.pull-right {
+	float: right;
+}
+
+#main{
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.navbar-text {
+
+}
+
+.list {
+
+}
