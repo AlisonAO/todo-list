@@ -58,7 +58,7 @@ ul {
 }
 
 .list {
-	background-color: pink;
+	background-color: rgba(92, 194, 249, 0.5);
 	border-radius: 12px;
 	padding: 8px;
 	width: 500px;
