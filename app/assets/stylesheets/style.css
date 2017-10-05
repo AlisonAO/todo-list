@@ -1,36 +1,94 @@
-
-
-
 html {
-
-}
-
-body {
-
+	background: url("water.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .navbar-text {
 	display: inline-block;
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+	line-height: 20px; 
 
+}
+
+.navbar {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    background: rgba(221, 221, 221, 0.9);
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    position: fixed;
+    width: 98%;
+    height: 50px;
+    top: 0;
 }
 
 .pull-right {
 	float: right;
+	padding-right: 5px;
 }
 
-#main{
+.pull-left {
+	padding-left: 8px;
+	 
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+
+.main, h2, .list, #buttons {
 	margin: 0 auto;
 	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+
+.main {
+	background-color: rgba(255,255,255,0.5);
+	width: 750px;
+	padding-top: 100px;
+	height: 900px;
+	/*box-shadow: 10px 10px 5px #bab8b8;*/
 }
 
 ul {
     list-style-position: inside;
-}
-
-.navbar-text {
-
+    padding-right: 15px;
 }
 
 .list {
-
+	background-color: pink;
+	border-radius: 12px;
+	padding: 8px;
+	width: 500px;
 }
+
+#buttons {
+	
+}
+button:empty {
+   display: none;
+}
+
+a {
+	color:#00ffdd;
+}      
+a:visited {
+	color:#36c0f7;
+}  
+a:hover {
+	color:#d8d197;
+}  
+a:active {
+	color:#0000FF;
+}  
+
+p, li {
+	font-size: 20px;
+}
+
+.text {
+	padding: 0px 4px 0px 4px;
+}
+
