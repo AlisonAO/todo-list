@@ -1,0 +1,9 @@
+<div class="list">
+ 
+  <p><strong><%= list.body %></strong></p>
+
+
+  <br>
+  <%= link_to "See Item", list if action_name == "index" %> 
+  <%= link_to "Edit Item", edit_list_path(list) %>
+</div>
