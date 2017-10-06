@@ -12,12 +12,12 @@ class ListsController < ApplicationController
   end
 
   def create
-
-    new_list = current_user.lists.create(list_params)
-    new_list.save
-
-    redirect_to new_list
-
+    @list = current_user.lists.create(list_params)
+    if @list.save
+      redirect_to "/lists"
+    else
+      render :new
+    end
   end
 
   def edit
@@ -25,11 +25,12 @@ class ListsController < ApplicationController
   end
 
   def update
-
-    list = current_user.lists.find(params[:id])
-    list.update!(list_params)
-
-    redirect_to list
+    @list = current_user.lists.find(params[:id])
+    if @list.update(list_params)
+      redirect_to "/lists"
+    else
+      render :edit
+    end
   end
 
   def destroy
